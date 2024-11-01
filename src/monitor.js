@@ -178,7 +178,7 @@ async function startMonitoring(bot) {
                                         if (wallets.has(from) || wallets.has(to)) {
                                             let fromName = from;
                                             let toName = wallets.get(to);
-                                            if (!walletName) {
+                                            if (!toName) {
                                                 fromName = wallets.get(from);
                                                 toName = to;
                                             };
